@@ -26,7 +26,7 @@ pipeline {
             steps {
             
                 // create docker build
-                sh "docker build -t webapp:v${BUILD_NUMBER}"
+                sh "docker build -t webapp:v${BUILD_NUMBER}" .
 
             }
         }
